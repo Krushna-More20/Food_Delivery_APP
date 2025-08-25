@@ -49,10 +49,10 @@ class _ProfilescreenState extends State<Profilescreen> {
                         )
                      ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
-                  Text(
+                  const Text(
                     "My Profile",
                     style: TextStyle(
                       fontSize: 23,
@@ -67,8 +67,8 @@ class _ProfilescreenState extends State<Profilescreen> {
                Center(
                 child: Column(
                   children: [
-                    CircleAvatar(
-                      radius: 80, // this controls both height & width (diameter = 80)
+                    const CircleAvatar(
+                      radius: 80, 
                       backgroundImage: AssetImage("assets/profile1.png",),
                     ),
                     SizedBox(

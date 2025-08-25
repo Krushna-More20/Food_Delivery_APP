@@ -65,12 +65,12 @@ class DetailScreen extends StatelessWidget {
                 ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 80,
           ),
           Row(
             children: [
-              SizedBox(
+              const SizedBox(
                 width: 30,
               ),
               GestureDetector(
@@ -115,7 +115,7 @@ class DetailScreen extends StatelessWidget {
           ),
           Row(
             children: [
-              SizedBox(
+              const SizedBox(
                 width: 30,
               ),
               GestureDetector(

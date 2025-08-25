@@ -60,7 +60,7 @@ class _CartscreenState extends State<Cartscreen> {
               ),
               Divider(),
 
-              // Payment
+             
               const ListTile(
                 contentPadding: EdgeInsets.zero,
                 title: const Text("Payment", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: Color.fromRGBO(124, 124, 124, 1),),),
@@ -227,7 +227,7 @@ class _CartscreenState extends State<Cartscreen> {
               );
             }),
           ),
-          // Bottom Total & Checkout
+          
           Obx(() => Container(
                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 decoration: const BoxDecoration(

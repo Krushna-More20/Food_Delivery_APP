@@ -10,14 +10,14 @@ import 'dart:convert';
 class FoodController extends GetxController {
   final MealServices _mealServices = MealServices();
 
-  // State for HomeScreen
+  
   var categories = <Category>[].obs;
   var meals = <Meal>[].obs;
   var selectedCategory = ''.obs;
   var isLoadingCategories = true.obs;
   var isLoadingMeals = false.obs;
 
-  // --- NEW --- State for CategoryMealsScreen
+
   var categoryMeals = <Meal>[].obs;
   var isLoadingCategoryMeals = false.obs;
 
@@ -42,7 +42,7 @@ class FoodController extends GetxController {
     }
   }
 
-  // Fetches meals for the HomeScreen horizontal filter
+  
   void fetchMeals(String category) async {
     try {
       isLoadingMeals(true);
@@ -54,11 +54,11 @@ class FoodController extends GetxController {
     }
   }
   
-  // --- NEW --- Fetches meals for the dedicated CategoryMealsScreen
+  
   void fetchMealsForCategoryPage(String category) async {
     try {
       isLoadingCategoryMeals(true);
-      // Clear previous results immediately for better UX
+      
       categoryMeals.clear(); 
       categoryMeals.value = await _mealServices.getMealsByCategory(category);
     } catch (e) {

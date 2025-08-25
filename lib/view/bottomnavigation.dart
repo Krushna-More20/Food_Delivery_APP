@@ -15,16 +15,16 @@ class _BottomnavigationState extends State<Bottomnavigation> {
   int _selectedIndex = 0;
 
   final List<Widget> _screens = const [
-    Homescreen(),   // ✅ Home screen you already built
-    Cartscreen(),   // ✅ Cart screen
-    Profilescreen(), // You can create a simple one
+    Homescreen(),   
+    Cartscreen(),   
+    Profilescreen(), 
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: _screens[_selectedIndex], // ✅ switch screens here
+        child: _screens[_selectedIndex], 
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
@@ -32,7 +32,7 @@ class _BottomnavigationState extends State<Bottomnavigation> {
         unselectedItemColor: Colors.grey,
         onTap: (index) {
           setState(() {
-            _selectedIndex = index; // ✅ change screen
+            _selectedIndex = index; 
           });
         },
         items: const [

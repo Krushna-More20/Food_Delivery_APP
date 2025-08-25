@@ -28,9 +28,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final media = MediaQuery.of(context).size;
-    final width = media.width;
-    final height = media.height;
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: Splashscreen(),

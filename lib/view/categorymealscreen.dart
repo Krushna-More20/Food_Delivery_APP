@@ -10,9 +10,9 @@ class CategoryMealsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Find the controller and trigger the fetch for this screen
+   
     final controller = Get.find<FoodController>();
-    // Use addPostFrameCallback to avoid calling setState during a build
+    
     WidgetsBinding.instance.addPostFrameCallback((_) {
       controller.fetchMealsForCategoryPage(category.name);
     });
@@ -27,15 +27,15 @@ class CategoryMealsScreen extends StatelessWidget {
             if (controller.categoryMeals.isEmpty) {
               return const Center(child: Text("No meals found in this category."));
             }
-            // Re-use the GridView layout
+            
             return Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
                 Row(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 20,
                     ),
                     GestureDetector(
@@ -45,7 +45,7 @@ class CategoryMealsScreen extends StatelessWidget {
                           width: 35,
                           height: 35,
                           
-                          child: Icon(Icons.arrow_back_outlined, size: 25,color: Colors.white,)),
+                          child: const Icon(Icons.arrow_back_outlined, size: 25,color: Colors.white,)),
                       ),
                       Text(
                         category.name,

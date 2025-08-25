@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:food_delivery_app/controller/food_controller.dart';
-import 'package:food_delivery_app/models/meal_model.dart';
-import 'package:food_delivery_app/view/cartscreen.dart';
 import 'package:food_delivery_app/view/categorymealscreen.dart';
-import 'package:food_delivery_app/view/detailscreen.dart';
 import 'package:food_delivery_app/view/mealcard.dart';
 import 'package:get/get.dart';
 
@@ -166,7 +163,7 @@ class _HomescreenState extends State<Homescreen> {
                   ),
                 ),
 
-                // This Obx block rebuilds the meals list when the category changes.
+              
                 Obx(() {
                   if (controller.isLoadingMeals.value) {
                     return const Center(

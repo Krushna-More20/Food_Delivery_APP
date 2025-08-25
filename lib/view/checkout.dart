@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/view/bottomnavigation.dart';
-import 'package:food_delivery_app/view/homescreen.dart';
 import 'package:get/get.dart';
 
 class Checkout extends StatelessWidget {
@@ -14,7 +13,7 @@ class Checkout extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 200,
             ),
             Image.asset("assets/done.png",
@@ -22,7 +21,7 @@ class Checkout extends StatelessWidget {
             height: 180,
             fit: BoxFit.cover,
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             const Text(
@@ -34,7 +33,7 @@ class Checkout extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             const Text(
@@ -46,7 +45,7 @@ class Checkout extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            SizedBox(
+            const SizedBox(
               height: 150,
             ),
             GestureDetector(

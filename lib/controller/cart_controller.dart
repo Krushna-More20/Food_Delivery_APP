@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 
 class CartController extends GetxController {
   var cartItems = <Meal>[].obs;
-  var itemQuantities = <int>[].obs; // parallel list for quantities
+  var itemQuantities = <int>[].obs; 
 
   void addToCart(Meal meal) {
     int index = cartItems.indexWhere((item) => item.id == meal.id);
